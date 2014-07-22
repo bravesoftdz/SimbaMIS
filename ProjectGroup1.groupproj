@@ -1,0 +1,72 @@
+﻿	<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+		<PropertyGroup>
+			<ProjectGuid>{6889C25E-005C-4D13-8C25-E9DB5CAE6DEE}</ProjectGuid>
+		</PropertyGroup>
+		<ItemGroup>
+			<Projects Include="simbaMIS.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="D:\2du\2duwork\2duwork\auction\reports\Report.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="C:\Program Files\CodeGear\FastReport479\Demos\Main\FRDemo.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="reportDesigner.dproj">
+				<Dependencies/>
+			</Projects>
+		</ItemGroup>
+		<ProjectExtensions>
+			<Borland.Personality>Default.Personality.12</Borland.Personality>
+			<Borland.ProjectType/>
+			<BorlandProject>
+				<Default.Personality/>
+			</BorlandProject>
+		</ProjectExtensions>
+		<Target Name="simbaMIS">
+			<MSBuild Projects="simbaMIS.dproj"/>
+		</Target>
+		<Target Name="simbaMIS:Clean">
+			<MSBuild Targets="Clean" Projects="simbaMIS.dproj"/>
+		</Target>
+		<Target Name="simbaMIS:Make">
+			<MSBuild Targets="Make" Projects="simbaMIS.dproj"/>
+		</Target>
+		<Target Name="Report">
+			<MSBuild Projects="D:\2du\2duwork\2duwork\auction\reports\Report.dproj"/>
+		</Target>
+		<Target Name="Report:Clean">
+			<MSBuild Targets="Clean" Projects="D:\2du\2duwork\2duwork\auction\reports\Report.dproj"/>
+		</Target>
+		<Target Name="Report:Make">
+			<MSBuild Targets="Make" Projects="D:\2du\2duwork\2duwork\auction\reports\Report.dproj"/>
+		</Target>
+		<Target Name="FRDemo">
+			<MSBuild Projects="C:\Program Files\CodeGear\FastReport479\Demos\Main\FRDemo.dproj"/>
+		</Target>
+		<Target Name="FRDemo:Clean">
+			<MSBuild Targets="Clean" Projects="C:\Program Files\CodeGear\FastReport479\Demos\Main\FRDemo.dproj"/>
+		</Target>
+		<Target Name="FRDemo:Make">
+			<MSBuild Targets="Make" Projects="C:\Program Files\CodeGear\FastReport479\Demos\Main\FRDemo.dproj"/>
+		</Target>
+		<Target Name="reportDesigner">
+			<MSBuild Projects="reportDesigner.dproj"/>
+		</Target>
+		<Target Name="reportDesigner:Clean">
+			<MSBuild Targets="Clean" Projects="reportDesigner.dproj"/>
+		</Target>
+		<Target Name="reportDesigner:Make">
+			<MSBuild Targets="Make" Projects="reportDesigner.dproj"/>
+		</Target>
+		<Target Name="Build">
+			<CallTarget Targets="simbaMIS;Report;FRDemo;reportDesigner"/>
+		</Target>
+		<Target Name="Clean">
+			<CallTarget Targets="simbaMIS:Clean;Report:Clean;FRDemo:Clean;reportDesigner:Clean"/>
+		</Target>
+		<Target Name="Make">
+			<CallTarget Targets="simbaMIS:Make;Report:Make;FRDemo:Make;reportDesigner:Make"/>
+		</Target>
+		<Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+	</Project>

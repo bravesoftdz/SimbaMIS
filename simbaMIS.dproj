@@ -1,0 +1,270 @@
+﻿	<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+		<PropertyGroup>
+			<ProjectGuid>{27235232-DF75-490F-9CDE-CAB120B9BB10}</ProjectGuid>
+			<ProjectVersion>12.0</ProjectVersion>
+			<MainSource>simbaMIS.dpr</MainSource>
+			<Config Condition="'$(Config)'==''">Debug</Config>
+			<DCC_DCCCompiler>DCC32</DCC_DCCCompiler>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Base' or '$(Base)'!=''">
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Release' or '$(Cfg_1)'!=''">
+			<Cfg_1>true</Cfg_1>
+			<CfgParent>Base</CfgParent>
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Debug' or '$(Cfg_2)'!=''">
+			<Cfg_2>true</Cfg_2>
+			<CfgParent>Base</CfgParent>
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Base)'!=''">
+			<DCC_UnitSearchPath>D:\DriverGenius Dev\drivergenius2013\trunk\DriverGenius\Raize\RC6\Source;$(DCC_UnitSearchPath)</DCC_UnitSearchPath>
+			<DCC_ExeOutput>bin\</DCC_ExeOutput>
+			<DCC_UnitAlias>WinTypes=Windows;WinProcs=Windows;DbiTypes=BDE;DbiProcs=BDE;DbiErrs=BDE;$(DCC_UnitAlias)</DCC_UnitAlias>
+			<DCC_DependencyCheckOutputName>bin\simbaMIS.exe</DCC_DependencyCheckOutputName>
+			<DCC_DcuOutput>dcu\</DCC_DcuOutput>
+			<DCC_ImageBase>00400000</DCC_ImageBase>
+			<DCC_Platform>x86</DCC_Platform>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Cfg_1)'!=''">
+			<DCC_LocalDebugSymbols>false</DCC_LocalDebugSymbols>
+			<DCC_Define>RELEASE;$(DCC_Define)</DCC_Define>
+			<DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+			<DCC_DebugInformation>false</DCC_DebugInformation>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Cfg_2)'!=''">
+			<DCC_Define>DEBUG;$(DCC_Define)</DCC_Define>
+		</PropertyGroup>
+		<ItemGroup>
+			<DelphiCompile Include="simbaMIS.dpr">
+				<MainSource>MainSource</MainSource>
+			</DelphiCompile>
+			<DCCReference Include="fmMain.pas">
+				<Form>FormMain</Form>
+			</DCCReference>
+			<DCCReference Include="mfmCheckout.pas">
+				<Form>FormCheckOut</Form>
+			</DCCReference>
+			<DCCReference Include="fmUserManager.pas">
+				<Form>FormUserManager</Form>
+			</DCCReference>
+			<DCCReference Include="fmUserInfo.pas">
+				<Form>FormUserInfo</Form>
+			</DCCReference>
+			<DCCReference Include="mysql.pas"/>
+			<DCCReference Include="myfunction.pas"/>
+			<DCCReference Include="fmEditPass.pas">
+				<Form>FormEditPass</Form>
+			</DCCReference>
+			<DCCReference Include="fmTableManager.pas">
+				<Form>FormTableManager</Form>
+			</DCCReference>
+			<DCCReference Include="dbfunction.pas"/>
+			<DCCReference Include="fmTableInfo.pas">
+				<Form>FormTableInfo</Form>
+			</DCCReference>
+			<DCCReference Include="fmMenuManager.pas">
+				<Form>FormMenuManager</Form>
+			</DCCReference>
+			<DCCReference Include="fmMenuInfo.pas">
+				<Form>FormMenuInfo</Form>
+			</DCCReference>
+			<DCCReference Include="fmActivityManager.pas">
+				<Form>FormActivityManager</Form>
+			</DCCReference>
+			<DCCReference Include="fmActivityInfo.pas">
+				<Form>FormActivityInfo</Form>
+			</DCCReference>
+			<DCCReference Include="fmOrderItem.pas">
+				<Form>FormOrderItem</Form>
+			</DCCReference>
+			<DCCReference Include="fmOrderManager.pas">
+				<Form>FormOrderManager</Form>
+			</DCCReference>
+			<DCCReference Include="fmOrderInfo.pas">
+				<Form>FormOrderInfo</Form>
+			</DCCReference>
+			<DCCReference Include="fmTableDetail.pas">
+				<Form>FormTableDetail</Form>
+			</DCCReference>
+			<DCCReference Include="fmMemberManager.pas">
+				<Form>FormMemberManager</Form>
+			</DCCReference>
+			<DCCReference Include="fmMemberAdd.pas">
+				<Form>FormMemberAdd</Form>
+			</DCCReference>
+			<DCCReference Include="fmMemberEdit.pas">
+				<Form>FormMemberEdit</Form>
+			</DCCReference>
+			<DCCReference Include="fmMemberReadd.pas">
+				<Form>FormMemberReadd</Form>
+			</DCCReference>
+			<DCCReference Include="fmNetTicketMaker.pas">
+				<Form>FormNetTicketMaker</Form>
+			</DCCReference>
+			<DCCReference Include="fmMemberPutMoney.pas">
+				<Form>FormMemberPutMoney</Form>
+			</DCCReference>
+			<DCCReference Include="fmInvoiceMaker.pas">
+				<Form>FormInvoiceMaker</Form>
+			</DCCReference>
+			<DCCReference Include="fmMemberDetail.pas">
+				<Form>FormMemberDetail</Form>
+			</DCCReference>
+			<DCCReference Include="fmInvoiceManager.pas">
+				<Form>FormInvoiceManager</Form>
+			</DCCReference>
+			<DCCReference Include="fmStoreManager.pas">
+				<Form>FormStoreManager</Form>
+			</DCCReference>
+			<DCCReference Include="fmReportManager.pas">
+				<Form>FormReportManager</Form>
+			</DCCReference>
+			<DCCReference Include="fmKitchenInfo.pas">
+				<Form>FormKitchenInfo</Form>
+			</DCCReference>
+			<DCCReference Include="mfmBarManager.pas">
+				<Form>FormBarManager</Form>
+			</DCCReference>
+			<DCCReference Include="mfmKitchenManager.pas">
+				<Form>FormKitchenManager</Form>
+			</DCCReference>
+			<DCCReference Include="fmMemberInvoice.pas">
+				<Form>FormMemberInvoice</Form>
+			</DCCReference>
+			<DCCReference Include="fmMemberInvoiceLog.pas">
+				<Form>FormMemberInvoiceLog</Form>
+			</DCCReference>
+			<DCCReference Include="fmGetYear.pas">
+				<Form>FormGetYear</Form>
+			</DCCReference>
+			<DCCReference Include="fmGetMonth.pas">
+				<Form>FormGetMonth</Form>
+			</DCCReference>
+			<DCCReference Include="fmGetDay.pas">
+				<Form>FormGetDay</Form>
+			</DCCReference>
+			<DCCReference Include="fmGetDate.pas">
+				<Form>FormGetDate</Form>
+			</DCCReference>
+			<DCCReference Include="fmKitchenColdInfo.pas">
+				<Form>FormKitchenColdInfo</Form>
+			</DCCReference>
+			<DCCReference Include="fmHasten.pas">
+				<Form>FormHasten</Form>
+			</DCCReference>
+			<DCCReference Include="fmLogin.pas">
+				<Form>FormLogin</Form>
+			</DCCReference>
+			<DCCReference Include="fmAbout.pas">
+				<Form>FormAbout</Form>
+			</DCCReference>
+			<DCCReference Include="fmBuyManager.pas">
+				<Form>FormBuyManager</Form>
+			</DCCReference>
+			<DCCReference Include="fmSellerManager.pas">
+				<Form>FormSellerManager</Form>
+			</DCCReference>
+			<DCCReference Include="fmBuyInfo.pas">
+				<Form>FormBuyInfo</Form>
+			</DCCReference>
+			<DCCReference Include="fmSellerInfo.pas">
+				<Form>FormSellerInfo</Form>
+			</DCCReference>
+			<DCCReference Include="fmSellerClear.pas">
+				<Form>FormSellerClear</Form>
+			</DCCReference>
+			<DCCReference Include="fmChangeReportData.pas">
+				<Form>FormChangeReportData</Form>
+			</DCCReference>
+			<DCCReference Include="fmSelectMenus.pas">
+				<Form>FormSelectMenus</Form>
+			</DCCReference>
+			<DCCReference Include="fmAssetsManager.pas">
+				<Form>FormAssetsManager</Form>
+			</DCCReference>
+			<DCCReference Include="fmAssetsInfo.pas">
+				<Form>FormAssetsInfo</Form>
+			</DCCReference>
+			<DCCReference Include="fmStoreJoin.pas">
+				<Form>FormStoreJoin</Form>
+			</DCCReference>
+			<DCCReference Include="fmStorePart.pas">
+				<Form>FormStorePart</Form>
+			</DCCReference>
+			<DCCReference Include="fmStoreDetail.pas">
+				<Form>FormStoreDetail</Form>
+			</DCCReference>
+			<DCCReference Include="fmStoreItemManager.pas">
+				<Form>FormStoreItemManager</Form>
+			</DCCReference>
+			<DCCReference Include="fmStoreItemInfo.pas">
+				<Form>FormStoreItemInfo</Form>
+			</DCCReference>
+			<DCCReference Include="fmTuiCai.pas">
+				<Form>FormTuiCai</Form>
+			</DCCReference>
+			<DCCReference Include="fmGetAccess.pas">
+				<Form>FormGetAccess</Form>
+			</DCCReference>
+			<None Include="bin\config.ini"/>
+			<BuildConfiguration Include="Base">
+				<Key>Base</Key>
+			</BuildConfiguration>
+			<BuildConfiguration Include="Debug">
+				<Key>Cfg_2</Key>
+				<CfgParent>Base</CfgParent>
+			</BuildConfiguration>
+			<BuildConfiguration Include="Release">
+				<Key>Cfg_1</Key>
+				<CfgParent>Base</CfgParent>
+			</BuildConfiguration>
+		</ItemGroup>
+		<Import Project="$(BDS)\Bin\CodeGear.Delphi.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Delphi.Targets')"/>
+		<ProjectExtensions>
+			<Borland.Personality>Delphi.Personality.12</Borland.Personality>
+			<Borland.ProjectType/>
+			<BorlandProject>
+				<Delphi.Personality>
+					<Source>
+						<Source Name="MainSource">simbaMIS.dpr</Source>
+					</Source>
+					<Parameters>
+						<Parameters Name="UseLauncher">False</Parameters>
+						<Parameters Name="LoadAllSymbols">True</Parameters>
+						<Parameters Name="LoadUnspecifiedSymbols">False</Parameters>
+					</Parameters>
+					<VersionInfo>
+						<VersionInfo Name="IncludeVerInfo">True</VersionInfo>
+						<VersionInfo Name="AutoIncBuild">True</VersionInfo>
+						<VersionInfo Name="MajorVer">1</VersionInfo>
+						<VersionInfo Name="MinorVer">0</VersionInfo>
+						<VersionInfo Name="Release">0</VersionInfo>
+						<VersionInfo Name="Build">898</VersionInfo>
+						<VersionInfo Name="Debug">False</VersionInfo>
+						<VersionInfo Name="PreRelease">False</VersionInfo>
+						<VersionInfo Name="Special">False</VersionInfo>
+						<VersionInfo Name="Private">False</VersionInfo>
+						<VersionInfo Name="DLL">False</VersionInfo>
+						<VersionInfo Name="Locale">2052</VersionInfo>
+						<VersionInfo Name="CodePage">936</VersionInfo>
+					</VersionInfo>
+					<VersionInfoKeys>
+						<VersionInfoKeys Name="CompanyName">simbaMIS</VersionInfoKeys>
+						<VersionInfoKeys Name="FileDescription">辛巴咖啡管理系统</VersionInfoKeys>
+						<VersionInfoKeys Name="FileVersion">1.0.0.898</VersionInfoKeys>
+						<VersionInfoKeys Name="InternalName">辛巴咖啡管理系统</VersionInfoKeys>
+						<VersionInfoKeys Name="LegalCopyright">Copyright simbacafe.com all rights</VersionInfoKeys>
+						<VersionInfoKeys Name="LegalTrademarks">simbaMIS</VersionInfoKeys>
+						<VersionInfoKeys Name="OriginalFilename">simbaMIS.exe</VersionInfoKeys>
+						<VersionInfoKeys Name="ProductName">simbaMIS</VersionInfoKeys>
+						<VersionInfoKeys Name="ProductVersion">1.0.0.0</VersionInfoKeys>
+						<VersionInfoKeys Name="Comments">simbacafe.com</VersionInfoKeys>
+					</VersionInfoKeys>
+				</Delphi.Personality>
+			</BorlandProject>
+			<ProjectFileVersion>12</ProjectFileVersion>
+		</ProjectExtensions>
+	</Project>

@@ -1,0 +1,5 @@
+menus表三个字段长度改为255
+menus表字段selectnum删除
+menus表字段imagesurl删除
+members表添加lastpaytime字段，表示最后一次消费时间
+members表添加scoreover字段，表示会员积分余额

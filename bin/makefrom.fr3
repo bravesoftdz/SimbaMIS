@@ -1,0 +1,17 @@
+<?xml version="1.1" encoding="utf-8"?>
+<TfrxReport Version="4.7.9" DotMatrixReport="False" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="4095" PreviewOptions.Zoom="1" PrintOptions.Printer="预设" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="41425.9812711574" ReportOptions.Description.Text="" ReportOptions.LastChange="41512.4964989352" ScriptLanguage="PascalScript" ScriptText.Text="begin&#13;&#10;&#13;&#10;end." PropData="044C65667403F80103546F700350010844617461736574730100095661726961626C657301010615204E616D653D22207375624974656D56616C75652200010611204E616D653D227461626C654E616D65220001060F204E616D653D226D4974656D69642200010613204E616D653D226D506172656E744E616D652200010611204E616D653D226D4974656D4E616D652200010610204E616D653D226D4974656D4E756D220000055374796C650100">
+  <TfrxDataPage Name="Data" Height="1000" Left="0" Top="0" Width="1000"/>
+  <TfrxReportPage Name="Page1" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="微软雅黑" Font.Style="0" PaperWidth="70" PaperHeight="297" PaperSize="256" LeftMargin="0" RightMargin="0" TopMargin="0" BottomMargin="0" ColumnWidth="0" ColumnPositions.Text="" EndlessHeight="True" HGuides.Text="" VGuides.Text="">
+    <TfrxReportTitle Name="ReportTitle1" Height="34.01577" Left="0" Top="18.89765" Width="264.5671" Child="Child1">
+      <TfrxMemoView Name="Memo3" Left="0" Top="7.55906" Width="264.5671" Height="22.67716535" ShowHint="False" Font.Charset="1" Font.Color="-16777208" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="8" Frame.BottomLine.Style="fsDot" ParentFont="False" Text=""/>
+      <TfrxMemoView Name="Memo1" Left="0" Top="7.55906" Width="75.5906" Height="22.67716535" ShowHint="False" Font.Charset="1" Font.Color="0" Font.Height="-16" Font.Name="微软雅黑" Font.Style="1" ParentFont="False" Text="[tableName]"/>
+      <TfrxMemoView Name="Memo18" Left="158.74026" Top="11.33859" Width="98.26778" Height="18.89765" ShowHint="False" DisplayFormat.FormatStr="hh:mm" DisplayFormat.Kind="fkDateTime" Font.Charset="1" Font.Color="0" Font.Height="-16" Font.Name="微软雅黑" Font.Style="1" HAlign="haRight" ParentFont="False" Text="[&#60;Time&#62;]"/>
+    </TfrxReportTitle>
+    <TfrxChild Name="Child1" Height="109.60637" Left="0" Top="75.5906" Width="264.5671">
+      <TfrxMemoView Name="Memo7" Left="0" Top="90.70872" Width="264.5671" Height="18.89765" ShowHint="False" Font.Charset="1" Font.Color="-16777208" Font.Height="-12" Font.Name="微软雅黑" Font.Style="0" Frame.BottomLine.Style="fsDot" ParentFont="False" Text="-"/>
+      <TfrxMemoView Name="Memo4" Left="0" Top="3.77953" Width="264.5671" Height="22.67716535" ShowHint="False" Font.Charset="1" Font.Color="-16777208" Font.Height="-16" Font.Name="微软雅黑" Font.Style="0" Frame.Typ="8" Frame.BottomLine.Style="fsDot" ParentFont="False" Text="[mParentName]"/>
+      <TfrxMemoView Name="Memo5" Left="0" Top="37.7953" Width="204.09462" Height="22.67716535" ShowHint="False" DataSetName="frxUserDataSetMakefrom" Font.Charset="1" Font.Color="0" Font.Height="-16" Font.Name="微软雅黑" Font.Style="0" Frame.BottomLine.Style="fsDot" ParentFont="False" Text="[mItemName]"/>
+      <TfrxMemoView Name="Memo6" Left="207.87415" Top="37.7953" Width="56.69295" Height="22.6771653543307" ShowHint="False" DataSetName="frxUserDataSetMakefrom" Font.Charset="1" Font.Color="-16777208" Font.Height="-16" Font.Name="微软雅黑" Font.Style="0" HAlign="haRight" ParentFont="False" Text="[mItemNum]"/>
+    </TfrxChild>
+  </TfrxReportPage>
+</TfrxReport>

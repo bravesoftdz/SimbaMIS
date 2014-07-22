@@ -1,0 +1,40 @@
+<?xml version="1.1" encoding="utf-8"?>
+<TfrxReport Version="4.7.9" DotMatrixReport="False" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="4095" PreviewOptions.Zoom="1" PrintOptions.Printer="预设" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="41425.9812711574" ReportOptions.Description.Text="" ReportOptions.LastChange="41450.812979294" ScriptLanguage="PascalScript" ScriptText.Text="begin&#13;&#10;&#13;&#10;end." PropData="044C65667403F80103546F700350010844617461736574730101064620446174615365743D226672785573657244617461536574436F6E734C6973742220446174615365744E616D653D226672785573657244617461536574436F6E734C697374220000095661726961626C657301010619204E616D653D22207461626C6544657461696C56616C75652200010611204E616D653D227461626C654E616D652200010612204E616D653D227469636B6574496E666F2200010610204E616D653D227261746554797065220001060F204E616D653D22706179547970652200010613204E616D653D2266696E616C50617953756D2200010612204E616D653D227072696E74436F756E742200010610204E616D653D224F706572617465722200010611204E616D653D22204D495356616C75652200010610204E616D653D226D69735469746C65220001060E204E616D653D226D697354656C2200010610204E616D653D226D6973576569626F2200010611204E616D653D226D697357656978696E220001060E204E616D653D226D6973576562220000055374796C650100">
+  <TfrxDataPage Name="Data" Height="1000" Left="0" Top="0" Width="1000"/>
+  <TfrxReportPage Name="Page1" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="微软雅黑" Font.Style="0" PaperWidth="74" PaperHeight="297" PaperSize="256" LeftMargin="2" RightMargin="2" TopMargin="5" BottomMargin="5" ColumnWidth="0" ColumnPositions.Text="" EndlessHeight="True" HGuides.Text="" VGuides.Text="">
+    <TfrxPageHeader Name="PageHeader1" Height="26.45669291" Left="0" Top="98.26778" Width="264.5671">
+      <TfrxMemoView Name="Memo5" Left="0" Top="0" Width="264.56691449" Height="22.67716535" ShowHint="False" Frame.Typ="8" Frame.BottomLine.Style="fsDot" Text=""/>
+      <TfrxMemoView Name="Memo6" Left="0" Top="3.77952756" Width="113.3859" Height="18.89765" ShowHint="False" Text="品名"/>
+      <TfrxMemoView Name="Memo7" Left="117.16543" Top="3.77953" Width="34.01577" Height="18.89765" ShowHint="False" DisplayFormat.Kind="fkNumeric" HAlign="haRight" Text="数量"/>
+      <TfrxMemoView Name="Memo8" Left="151.1812" Top="3.77953" Width="49.13389" Height="18.89765" ShowHint="False" DisplayFormat.FormatStr="%2.0m" DisplayFormat.Kind="fkNumeric" HAlign="haRight" Text="单价"/>
+      <TfrxMemoView Name="Memo9" Left="200.31509" Top="3.77953" Width="64.25201" Height="18.89765" ShowHint="False" DisplayFormat.FormatStr="%2.1m" DisplayFormat.Kind="fkNumeric" HAlign="haRight" Text="小计"/>
+    </TfrxPageHeader>
+    <TfrxReportTitle Name="ReportTitle1" Height="56.69291583" Left="0" Top="18.89765" Width="264.5671">
+      <TfrxMemoView Name="Memo1" Left="0" Top="30.23622291" Width="264.566929133858" Height="22.67716535" ShowHint="False" Frame.Typ="8" Text=""/>
+      <TfrxMemoView Name="Memo2" Left="0" Top="0" Width="264.5671" Height="18.89765" ShowHint="False" Font.Charset="1" Font.Color="0" Font.Height="-15" Font.Name="微软雅黑" Font.Style="0" HAlign="haCenter" ParentFont="False" Text="[misTitle]消费清单"/>
+      <TfrxMemoView Name="Memo4" Left="37.7953" Top="30.23624" Width="34.01577" Height="18.89765" ShowHint="False" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="微软雅黑" Font.Style="0" ParentFont="False" Text="[tableName]"/>
+      <TfrxMemoView Name="Memo3" Left="0" Top="30.23624" Width="37.7953" Height="18.89765" ShowHint="False" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="微软雅黑" Font.Style="0" ParentFont="False" Text="台位:"/>
+      <TfrxMemoView Name="Memo17" Left="117.16543" Top="30.23624" Width="83.14966" Height="18.89765" ShowHint="False" DisplayFormat.FormatStr="yyyy-mm-dd" DisplayFormat.Kind="fkDateTime" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="微软雅黑" Font.Style="0" ParentFont="False" Text="[&#60;Date&#62;]"/>
+      <TfrxMemoView Name="Memo18" Left="200.31509" Top="30.23624" Width="64.25201" Height="18.89765" ShowHint="False" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="微软雅黑" Font.Style="0" ParentFont="False" Text="[&#60;Time&#62;]"/>
+    </TfrxReportTitle>
+    <TfrxMasterData Name="MasterData1" Height="22.67718" Left="0" Top="185.19697" Width="264.5671" ColumnWidth="0" ColumnGap="0" DataSet="frxUserDataSetConsList" DataSetName="frxUserDataSetConsList" RowCount="0">
+      <TfrxMemoView Name="Memo10" Left="0" Top="0" Width="113.3859" Height="18.89765" ShowHint="False" DataSetName="frxUserDataSetConsDetail" Text="[frxUserDataSetConsList.&#34;itemname&#34;]"/>
+      <TfrxMemoView Name="Memo11" Left="113.3859" Top="0" Width="37.7953" Height="18.89765" ShowHint="False" DataSetName="frxUserDataSetConsDetail" DisplayFormat.FormatStr="%g" DisplayFormat.Kind="fkNumeric" HAlign="haRight" Text="[frxUserDataSetConsList.&#34;nums&#34;]"/>
+      <TfrxMemoView Name="Memo12" Left="151.1812" Top="0" Width="49.13389" Height="18.89765" ShowHint="False" DataSetName="frxUserDataSetConsDetail" DisplayFormat.FormatStr="%2.0m" DisplayFormat.Kind="fkNumeric" HAlign="haRight" Text="[frxUserDataSetConsList.&#34;price&#34;]"/>
+      <TfrxMemoView Name="Memo13" Left="200.31509" Top="0" Width="64.25201" Height="18.89765" ShowHint="False" DataSet="frxUserDataSetConsList" DataSetName="frxUserDataSetConsList" DisplayFormat.FormatStr="%2.0m" DisplayFormat.Kind="fkNumeric" HAlign="haRight" Text="[&#60;frxUserDataSetConsList.&#34;nums&#34;&#62;*&#60;frxUserDataSetConsList.&#34;price&#34;&#62;]"/>
+    </TfrxMasterData>
+    <TfrxReportSummary Name="ReportSummary1" Height="26.45669291" Left="0" Top="268.34663" Width="264.5671" Child="ChildPrintList" PrintChildIfInvisible="True">
+      <TfrxMemoView Name="Memo14" Left="0" Top="3.77953" Width="264.5671" Height="22.67716535" ShowHint="False" Font.Charset="1" Font.Color="-16777208" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="4" Frame.TopLine.Style="fsDot" Frame.BottomLine.Style="fsDot" ParentFont="False" Text=""/>
+      <TfrxMemoView Name="Memo15" Left="0" Top="7.55905511811024" Width="113.3859" Height="18.89765" ShowHint="False" Text="　应收合计："/>
+      <TfrxMemoView Name="Memo16" Left="173.85838" Top="7.55905512" Width="90.70872" Height="18.89765" ShowHint="False" DataSet="frxUserDataSetConsList" DataSetName="frxUserDataSetConsList" DisplayFormat.FormatStr="%2.0m" DisplayFormat.Kind="fkNumeric" HAlign="haRight" Text="[SUM(&#60;frxUserDataSetConsList.&#34;nums&#34;&#62;*&#60;frxUserDataSetConsList.&#34;price&#34;&#62;)]"/>
+    </TfrxReportSummary>
+    <TfrxChild Name="ChildPrintList" Height="37.7953" Left="0" Top="317.48052" Width="264.5671">
+      <TfrxMemoView Name="Memo20" Left="0" Top="15.11812" Width="264.5671" Height="18.89765" ShowHint="False" Text="[printCount]"/>
+    </TfrxChild>
+    <TfrxPageFooter Name="PageFooter1" Height="75.59057315" Left="0" Top="377.953" Width="264.5671">
+      <TfrxMemoView Name="Memo19" Left="0" Top="7.55906" Width="264.5671" Height="22.67718" ShowHint="False" Frame.Typ="4" Frame.TopLine.Style="fsDot" HAlign="haCenter" VAlign="vaBottom" Text="欢迎光临[misTitle]！"/>
+      <TfrxMemoView Name="Memo29" Left="0" Top="30.23624" Width="264.5671" Height="18.89765" ShowHint="False" HAlign="haCenter" VAlign="vaBottom" Text="官方网站：[misWeb]"/>
+      <TfrxMemoView Name="Memo30" Left="0" Top="49.13389" Width="264.5671" Height="18.89765" ShowHint="False" HAlign="haCenter" VAlign="vaBottom" Text="订台电话：[misTel]"/>
+    </TfrxPageFooter>
+  </TfrxReportPage>
+</TfrxReport>
